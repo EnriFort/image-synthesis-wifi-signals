@@ -6,7 +6,7 @@
             - **sgnl**: signal dataset, (amplitudes over time);
             - **models**: where to save best models;
             - **results**: where to save final generated images.
-            > Note: img and sgnl folder are empty because they contained too much files.
+        > Note: img and sgnl folder are empty because they contained too much files.
     - **Network** - Folder with the actual code
         - **customDataset.py**: custom dataset function to open images and signals;
         - **customDatasetPol.py**: modified version of 'customDataset.py' to combine different polarizations;
