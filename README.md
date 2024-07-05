@@ -3,7 +3,7 @@
     - **data** - contains datasets and other useful data:
         - **OBJECTS**: dataset for objects:
             - **img**: image dataset;
-            - **sgnl**: signal dataset (amplitudes over time);
+            - **sgnl**: signal dataset (amplitudes over time, only signlas with 200 pkts are available on the repository);
             - **models**: where to save best models;
             - **results**: where to save final generated images.
 
@@ -14,7 +14,6 @@
         - **networks**: contains the implementation of the neural network: encoder, decoder, and LSTM;
         - **trainSteps**: contains functions for the training and evaluation phases of the network: train_loop, validation_loop, and test_loop;
         - **utils.py**: contains useful functions called by the main and other scripts.
-    - **modello.jpg**: shows the network architecture used.
       
 2) To perform various TESTS, you can pass the Hyperparameters (*learning rate, batch size...*) from the command line; just run the python script 'main.py' with the various parameters, for example:
 
