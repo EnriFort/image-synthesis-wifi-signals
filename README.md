@@ -16,8 +16,10 @@
         - **utils.py**: contains useful functions called by the main and other scripts.
     - **modello.jpg**: shows the network architecture used.
       
-2) To perform various TESTS, you can pass the Hyperparameters (learning rate, batch size...) from the command line; just run the python script 'main.py' with the various parameters, for example:
+2) To perform various TESTS, you can pass the Hyperparameters (*learning rate, batch size...*) from the command line; just run the python script 'main.py' with the various parameters, for example:
 
         `python .\Network\main.py --img_size=128 --lr=0.0002 --batch_size=16 --wd=...`
 
 If no parameters are passed, the default ones will be used. For more information about the existing parameters, read the main.
+Above there is the proposed model architecture for Image synthesis from Wi-Fi signals.
+![modello](https://github.com/EnriFort/image-synthesis-wifi-signals/assets/50843864/efcdcc52-5e5f-466e-9ed0-ac2091109cbe)
