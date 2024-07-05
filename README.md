@@ -1,2 +1,23 @@
 # image-synthesis-wifi-signals
-Code and resources for my bachelor's thesis on synthesizing images from WiFi signal data using neural networks implemented in PyTorch.
+1) The STRUCTURE of the code is as follows:
+    - **data** - contains datasets and other useful data:
+        - **OBJECTS**: dataset for objects:
+            - **img**: image dataset;
+            - **sgnl**: signal dataset (amplitudes over time);
+            - **models**: contains the best saved models;
+            - **results**: contains the final generated images.
+
+    - **Network** - Folder with the actual code
+        - **customDataset.py**: custom dataset function to open images and signals;
+        - **customDatasetPol.py**: modified version of 'customDataset.py' to combine different polarizations;
+        - **main.py**: main function where the training and instantiation of the neural network take place;
+        - **networks**: contains the implementation of the neural network: encoder, decoder, and LSTM;
+        - **trainSteps**: contains functions for the training and evaluation phases of the network: train_loop, validation_loop, and test_loop;
+        - **utils.py**: contains useful functions called by the main and other scripts.
+    - **modello.jpg**: shows the network architecture used.
+      
+2) To perform various TESTS, you can pass the Hyperparameters (learning rate, batch size...) from the command line; just run the python script 'main.py' with the various parameters, for example:
+
+        `python .\Network\main.py --img_size=128 --lr=0.0002 --batch_size=16 --wd=...`
+
+If no parameters are passed, the default ones will be used. For more information about the existing parameters, read the main.
