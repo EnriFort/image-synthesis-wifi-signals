@@ -3,7 +3,7 @@
     - **data** - contains datasets and other useful data:
         - **OBJECTS**: dataset for objects:
             - **img**: image dataset;
-            - **sgnl**: signal dataset (amplitudes over time, only signlas with 200 pkts are available on the repository);
+            - **sgnl**: signal dataset, amplitudes over time (only signlas with 50 pkts are available on the repository);
             - **models**: where to save best models;
             - **results**: where to save final generated images.
 
