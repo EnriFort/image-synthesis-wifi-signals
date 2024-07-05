@@ -4,8 +4,8 @@
         - **OBJECTS**: dataset for objects:
             - **img**: image dataset;
             - **sgnl**: signal dataset (amplitudes over time);
-            - **models**: contains the best saved models;
-            - **results**: contains the final generated images.
+            - **models**: where to save best models;
+            - **results**: where to save final generated images.
 
     - **Network** - Folder with the actual code
         - **customDataset.py**: custom dataset function to open images and signals;
@@ -21,5 +21,6 @@
         `python .\Network\main.py --img_size=128 --lr=0.0002 --batch_size=16 --wd=...`
 
 If no parameters are passed, the default ones will be used. For more information about the existing parameters, read the main.
+
 Above there is the proposed model architecture for Image synthesis from Wi-Fi signals.
 ![modello](https://github.com/EnriFort/image-synthesis-wifi-signals/assets/50843864/efcdcc52-5e5f-466e-9ed0-ac2091109cbe)
